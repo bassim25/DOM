@@ -1,0 +1,51 @@
+.totale-price {
+    position: fixed;
+    bottom: 0px;
+    width: 65%;
+  }
+  body {
+    padding-bottom: 50px;
+  }
+  .heart {
+    width: 100px;
+    height: 100px;
+    background-color: #e0ff6f;
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 20px;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: #b3f943;
+    border-radius: 100px;
+    position: absolute;
+}
+
+.heart::before {
+    left: 50px;
+    top: 0;
+}
+
+.heart::after {
+    left: 0;
+    top: -50px;
+}
+
+.heart-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#toggle-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #34db7c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
